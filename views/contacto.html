@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - EcoMarket</title>
-  <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/layout.css">
-  <link rel="stylesheet" href="../css/components.css">
-  <link rel="stylesheet" href="../css/animations.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket - Contacto</title>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <header>
+        <h1>EcoMarket</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header class="site-header">
-    <div class="header-container">
-      <div class="logo">EcoMarket 🌿</div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="sobre-nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html" class="active">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <main>
+        <section class="contact-section">
+            <h2>Ponte en Contacto con Nosotros</h2>
+            <p>¿Tienes dudas o sugerencias? Escríbenos y te responderemos lo antes posible.</p>
 
-  <main style="max-width: 800px; margin: 3rem auto; padding: 0 1rem;">
-    <h1>Ponte en Contacto</h1>
-    
-    <!-- Formulario Inteligente con Validación Visual CSS -->
-    <form style="margin-top: 2rem;">
-      <div class="form-group">
-        <label for="nombre">Nombre Completo:</label>
-        <input type="text" id="nombre" class="form-control" required placeholder="Ej. Ana Pérez">
-      </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
 
-      <div class="form-group">
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" class="form-control" required placeholder="tu@email.com">
-      </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                </div>
 
-      <div class="form-group">
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" class="form-control" rows="5" required placeholder="Escribe tu consulta aquí..."></textarea>
-      </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
 
-      <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-    </form>
+                <button type="submit" class="btn-send">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
 
-    <!-- Mapa Estilizado -->
-    <section style="margin-top: 3rem;">
-      <h2>Nuestra Ubicación</h2>
-      <img src="../img/mapa-estatico.png" alt="Mapa de localización EcoMarket" style="width: 100%; border-radius: 8px; margin-top: 1rem;">
-    </section>
-  </main>
-
+    <footer>
+        <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
