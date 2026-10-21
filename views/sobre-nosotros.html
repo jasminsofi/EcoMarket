@@ -7,36 +7,81 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header>
-        <h1>EcoMarket</h1>
-        <nav>
+    <header class="main-header">
+        <div class="logo">
+            <a href="../index.html" class="logo-link">
+                <img src="../img/logo.svg" alt="EcoMarket Logo" style="height: 38px;">
+            </a>
+        </div>
+        <nav class="main-nav">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="sobre-nosotros.html" class="active">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="header-actions">
+            <input type="text" placeholder="Buscar..." class="search-bar">
+            <a href="#" class="cart-icon">🛒 <span class="badge">3</span></a>
+        </div>
     </header>
 
-    <main>
-        <section class="about-section">
-            <h2>Nuestra Historia</h2>
-            <p>EcoMarket nació con la visión de facilitar el acceso a productos sostenibles y amigables con el medio ambiente, promoviendo un consumo consciente e impulsando a marcas locales e independientes.</p>
+    <main class="about-container" style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
+        <!-- Historia Layout Flexbox -->
+        <section class="about-history" style="display: flex; gap: 2rem; align-items: center; margin-bottom: 3rem;">
+            <div class="history-text" style="flex: 1;">
+                <h2>Nuestra Historia</h2>
+                <p>EcoMarket nació con la visión de transformar el consumo masivo en decisiones conscientes. Nos dedicamos a conectar marcas éticas con consumidores que buscan proteger el medio ambiente.</p>
+            </div>
+            <div class="history-image" style="flex: 1;">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Naturaleza y Sostenibilidad" style="width: 100%; border-radius: 8px;">
+            </div>
+        </section>
 
-            <h3>Nuestra Misión</h3>
-            <p>Reducir el impacto ambiental a través de alternativas ecológicas, biodegradables y reutilizables para el uso cotidiano.</p>
+        <!-- Principios Ecológicos -->
+        <section class="principles-section" style="margin-bottom: 3rem;">
+            <h2>Nuestros Principios Ecológicos</h2>
+            <div class="principles-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                <div class="principle-card" style="background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #ecf0f1; text-align: center;">
+                    <span class="icon" style="font-size: 2rem;">🌱</span>
+                    <h3>Sin Plástico</h3>
+                    <p>Empaques y productos 100% biodegradables o compostables.</p>
+                </div>
+                <div class="principle-card" style="background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #ecf0f1; text-align: center;">
+                    <span class="icon" style="font-size: 2rem;">🤝</span>
+                    <h3>Comercio Justo</h3>
+                    <p>Pagos equitativos y condiciones dignas para artesanos locales.</p>
+                </div>
+                <div class="principle-card" style="background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #ecf0f1; text-align: center;">
+                    <span class="icon" style="font-size: 2rem;">♻️</span>
+                    <h3>Zero Waste</h3>
+                    <p>Fomentamos la reutilización y el reciclaje constante.</p>
+                </div>
+            </div>
+        </section>
 
-            <h3>Nuestros Valores</h3>
-            <ul>
-                <li>Sostenibilidad y compromiso ambiental.</li>
-                <li>Transparencia en el origen de los productos.</li>
-                <li>Calidad y durabilidad.</li>
-            </ul>
+        <!-- Testimonios -->
+        <section class="testimonials-section">
+            <h2>Testimonios de Clientes</h2>
+            <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                <div class="testimonial-card" style="background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #ecf0f1; text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Cliente" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
+                    <p>"EcoMarket cambió por completo mis hábitos. Productos de excelente calidad."</p>
+                    <div class="stars" style="color: #f1c40f; margin: 0.5rem 0;">★★★★★</div>
+                    <h4>María Fernanda</h4>
+                </div>
+                <div class="testimonial-card" style="background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #ecf0f1; text-align: center;">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Cliente" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
+                    <p>"El envío fue rapidísimo y sin un solo pedazo de plástico en el empaque."</p>
+                    <div class="stars" style="color: #f1c40f; margin: 0.5rem 0;">★★★★★</div>
+                    <h4>Carlos Gómez</h4>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="main-footer">
         <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
     </footer>
 </body>
