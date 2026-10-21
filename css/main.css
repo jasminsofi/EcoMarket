@@ -112,3 +112,193 @@ a {
   text-align: center;
   padding: 1.5rem;
 }
+
+
+.hero-banner {
+  background: linear-gradient(rgba(30, 57, 42, 0.75), rgba(30, 57, 42, 0.75)),
+              url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  color: var(--bg-white);
+  text-align: center;
+  padding: 4rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  max-width: 1200px;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+
+.catalog-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.filters-sidebar {
+  background-color: var(--bg-white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  height: fit-content;
+}
+
+.filter-group {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-grid-20 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.product-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Badges de Stock */
+.badge-stock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge-stock.in-stock {
+  background-color: var(--primary-color);
+}
+
+.badge-stock.out-stock {
+  background-color: var(--accent-color);
+}
+
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #e74c3c;
+  transition: transform 0.2s;
+}
+
+.fav-btn:hover {
+  transform: scale(1.15);
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.page-link {
+  padding: 0.5rem 1rem;
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.page-link.active,
+.page-link:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+.contact-form input:valid,
+.contact-form textarea:valid {
+  border-color: var(--primary-color);
+}
+
+.contact-form input:focus:invalid,
+.contact-form textarea:focus:invalid {
+  border-color: var(--accent-color);
+}
+
+.social-btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.social-btn:hover {
+  background-color: var(--border-color);
+}
+
+@media (min-width: 768px) {
+  .hero-banner {
+    padding: 6rem 2rem;
+  }
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  .catalog-layout {
+    flex-direction: row;
+  }
+  .filters-sidebar {
+    width: 260px;
+    position: sticky;
+    top: 90px; 
+  }
+  .catalog-content {
+    flex: 1;
+  }
+}
