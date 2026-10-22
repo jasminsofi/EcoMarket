@@ -1,9 +1,9 @@
 
 
-/* Importación de archivos base */
+/* Importación de archivos base 
 @import url('layout.css');
 @import url('components.css');
-@import url('animations.css');
+@import url('animations.css'); */
 
 /* Reset global */
 * {
@@ -115,4 +115,10 @@ body {
     z-index: 3;
     max-width: 1000px;
     margin: 0 auto;
+}
+
+.titulo-catalogo {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
 }
