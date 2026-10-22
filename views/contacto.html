@@ -1,33 +1,47 @@
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoMarket - Contacto</title>
+    <title>Sobre Nosotros - EcoMarket</title>
+
+    <!-- Hojas de estilo CSS vinculadas correctamente desde la carpeta views/ -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="logo">
-            <a href="../index.html" class="logo-link">
-                <img src="../img/logo.jpg" alt="EcoMarket Logo" style="height: 38px;">
+    <!-- ENCABEZADO PRINCIPAL UNIFICADO -->
+    <header class="site-header">
+        <div class="container header-container">
+
+            <a href="../index.html" class="logo-container">
+                <img src="../img/logo.jpg" alt="EcoMarket Logo">
+                <span class="logo-text">EcoMarket</span>
             </a>
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre-nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html" class="active">Contacto</a></li>
-            </ul>
-        </nav>
-        <div class="header-actions">
-            <input type="text" placeholder="Buscar..." class="search-bar">
-            <a href="#" class="cart-icon">🛒 <span class="badge">3</span></a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
         </div>
     </header>
+
+    <!-- SUBCABEZADO / BANNER CON IMAGEN Y TEXTO -->
+    <section class="banner-sobre-nosotros">
+        <img src="../img/fondo4.jpg" alt="Fondo Sobre Nosotros" class="imagen-fondo">
+        <div class="texto-sobre-imagen">
+            <h1>NUESTRO CONTACTO</h1>
+            <p>Conoce más acerca de nuestra tienda ecológica...</p>
+        </div>
+    </section>
+
+   
 
     <main class="contact-container" style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
         <h2>Ponte en Contacto</h2>
@@ -82,4 +96,4 @@
     </footer>
 </body>
 </html>
->>>>>>> 4e78f247da45ac1034f231c9fd88922f943e89ad
+
