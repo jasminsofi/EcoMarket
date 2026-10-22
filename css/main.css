@@ -1,8 +1,11 @@
-/* Reset y estilos generales */
+
+
+/* Importación de archivos base 
 @import url('layout.css');
 @import url('components.css');
-@import url('animations.css');
+@import url('animations.css'); */
 
+/* Reset global */
 * {
     margin: 0;
     padding: 0;
@@ -12,4 +15,110 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4fbf7; /* Fondo general suave y fresco */
+}
+
+/* Grilla estricta de 2 en 2 productos (Tarjetas más grandecitas) */
+.product-grid-20 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem; /* Espacio amplio entre tarjetas */
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilo para las tarjetas de producto */
+.product-card {
+    background-color: #e8f8f0; /* Tono verde claro ecológico */
+    border: 1px solid #b7ebd0; /* Borde sutil armónico */
+    border-radius: 16px;      /* Esquinas redondeadas */
+    padding: 2rem;             /* Espacio interno amplio */
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de elevación al pasar el mouse por encima */
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(46, 204, 113, 0.25);
+}
+
+
+.product-card img {
+    width: 100%;
+    height: 240px;         
+    object-fit: cover;    
+    border-radius: 12px;   
+    margin-bottom: 1.2rem;
+}
+
+/* Textos dentro de la tarjeta */
+.product-card h3 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.product-card img {
+    width: 100%;          
+    height: 380px;        
+    object-fit: cover;    
+    border-radius: 8px;   
+    margin-bottom: 1rem;   
+}
+
+
+
+.products-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+    overflow: hidden;
+}
+
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 38, 28, 0.55); /* Tono verde oscuro semitransparente */
+    z-index: 2;
+}
+
+/* Contenedor del contenido (grilla y paginación) que flota sobre el video */
+.products-content {
+    position: relative;
+    z-index: 3;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.titulo-catalogo {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
 }

@@ -7,55 +7,242 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header>
-        <h1>EcoMarket</h1>
-        <nav>
+    <header class="main-header">
+        <div class="logo">
+            <a href="../index.html" class="logo-link">
+                <img src="../img/logo.jpg" alt="EcoMarket Logo" style="height: 38px;">
+            </a>
+        </div>
+        <nav class="main-nav">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="sobre-nosotros.html">Nosotros</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="header-actions">
+            <input type="text" placeholder="Buscar..." class="search-bar">
+            <a href="#" class="cart-icon">🛒 <span class="badge">3</span></a>
+        </div>
     </header>
 
-    <main>
-        <section class="catalog-header">
-            <h2>Nuestros Productos Ecológicos</h2>
-            <p>Descubre nuestra selección de productos sostenibles para el cuidado del planeta.</p>
-        </section>
+    <div class="catalog-layout">
+        <!-- Sidebar de Filtros (Sticky) -->
+        <aside class="filters-sidebar">
+            <h3>Filtros</h3>
+            <div class="filter-group">
+                <h4>Categorías</h4>
+                <label><input type="checkbox"> Hogar</label>
+                <label><input type="checkbox"> Moda</label>
+                <label><input type="checkbox"> Cuidado Personal</label>
+                <label><input type="checkbox"> Alimentos</label>
+            </div>
+            <div class="filter-group">
+                <h4>Rango de Precio</h4>
+                <input type="range" min="5000" max="100000">
+            </div>
+            <div class="filter-group">
+                <h4>Disponibilidad</h4>
+                <label><input type="checkbox"> En Stock</label>
+            </div>
+        </aside>
 
-        <section class="product-grid">
-            <!-- Producto 1 -->
-            <article class="product-card">
-                <img src="../img/producto1.jpg" alt="Cepillo de Dientes de Bambú">
-                <h3>Cepillo de Dientes de Bambú</h3>
-                <p class="description">Biodegradable con cerdas suaves de fibra vegetal.</p>
-                <p class="price">$12.000 COP</p>
-                <button class="btn-buy">Agregar al Carrito</button>
-            </article>
+        <!-- Contenido del Catálogo con Video de Fondo -->
+        <main class="catalog-content">
+            <section class="products-section">
+                <!-- Video de fondo -->
+                <video autoplay muted loop playsinline class="bg-video">
+                    <source src="../video/fondo.mp4" type="video/mp4">
+                    Tu navegador no soporta videos en HTML5.
+                </video>
 
-            <!-- Producto 2 -->
-            <article class="product-card">
-                <img src="../img/producto2.jpg" alt="Bolsa de Tela Orgánica">
-                <h3>Bolsa Reutilizable de Algodón</h3>
-                <p class="description">Ideal para tus compras diarias sin plástico.</p>
-                <p class="price">$18.000 COP</p>
-                <button class="btn-buy">Agregar al Carrito</button>
-            </article>
+                <!-- Capa translúcida para contraste -->
+                <div class="video-overlay"></div>
 
-            <!-- Producto 3 -->
-            <article class="product-card">
-                <img src="../img/producto3.jpg" alt="Jabón Artesanal Natural">
-                <h3>Jabón Artesanal de Lavanda</h3>
-                <p class="description">Elaborado con aceites esenciales e ingredientes 100% orgánicos.</p>
-                <p class="price">$15.000 COP</p>
-                <button class="btn-buy">Agregar al Carrito</button>
-            </article>
-        </section>
-    </main>
+                <!-- Contenido flotando sobre el video -->
+                <div class="products-content">
+                    <div class="catalog-header-bar">
+                        <h2 class="titulo-catalogo">CATÁLOGO DE PRODUCTOS</h2>
+                    </div>
 
-    <footer>
+                    <!-- Matriz de 20 Productos -->
+                    <div class="product-grid-20">
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/cepillos-de-bambu.webp" alt="cepillos de bambu">
+                            <h3>Cepillo Bambú</h3>
+                            <p class="price">$12.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock out-stock">Agotado</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/bolsa de tela.jpg" alt="bolsa de tela">
+                            <h3>Bolsa de Tela</h3>
+                            <p class="price">$18.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/termos inoxidables.jpg" alt="termo inoxidable">
+                            <h3>Termo Inoxidable</h3>
+                            <p class="price">$45.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/jabon lavanda.jpg" alt="jabon lavanda">
+                            <h3>Jabón Lavanda</h3>
+                            <p class="price">$15.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/pitillos de acero.jpg" alt="pitillos de acero">
+                            <h3>Pitillos Acero</h3>
+                            <p class="price">$20.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock out-stock">Agotado</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/libreta reciclada.jpg" alt="libreta reciclada">
+                            <h3>Libreta Reciclada</h3>
+                            <p class="price">$14.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/crema naturales.jpg" alt="cremas naturales">
+                            <h3>Crema Natural</h3>
+                            <p class="price">$25.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/shampoo solido.jpg" alt="shampoo solido">
+                            <h3>Shampoo Sólido</h3>
+                            <p class="price">$22.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/vela soya.jpg" alt="vela de soya">
+                            <h3>Vela de Soya</h3>
+                            <p class="price">$30.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/aceite esencial.png" alt="aceite esencial">
+                            <h3>Aceite Esencial</h3>
+                            <p class="price">$28.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/cubiertos de bambu.jpg" alt="cubiertos de bambu">
+                            <h3>Cubiertos Bambú</h3>
+                            <p class="price">$16.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/esponja vejetal.jpg" alt="esponja vegetal">
+                            <h3>Esponja Vegetal</h3>
+                            <p class="price">$8.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/toalla de algodon.jpg" alt="toalla de algodon">
+                            <h3>Toalla Algodón</h3>
+                            <p class="price">$35.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock out-stock">Agotado</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/te organico.jpg" alt="te organico">
+                            <h3>Té Orgánico</h3>
+                            <p class="price">$19.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/peine de madera.jpg" alt="peine de madera">
+                            <h3>Peine Madera</h3>
+                            <p class="price">$13.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/vasos de cristal.jpg" alt="vasos de cristal">
+                            <h3>Vasos Cristal</h3>
+                            <p class="price">$24.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/cepillo limpieza.jpg" alt="cepillo limpieza">
+                            <h3>Cepillo Limpieza</h3>
+                            <p class="price">$11.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/desodorante natural.jpg" alt="desodorante natural">
+                            <h3>Desodorante Natural</h3>
+                            <p class="price">$21.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/balsamo labial.jpg" alt="balsamo labial">
+                            <h3>Bálsamo Labial</h3>
+                            <p class="price">$9.000 COP</p>
+                        </article>
+
+                        <article class="product-card">
+                            <span class="badge-stock in-stock">En Stock</span>
+                            <button class="fav-btn" title="Favoritos">♥</button>
+                            <img src="../img/contenedor de vidrio.jpg" alt="contenedor de vidrio">
+                            <h3>Contenedor Vidrio</h3>
+                            <p class="price">$27.000 COP</p>
+                        </article>
+                    </div>
+
+                    <!-- Paginación Visual -->
+                    <div class="pagination">
+                        <a href="#" class="page-link">&laquo; Anterior</a>
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link">Siguiente &raquo;</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="main-footer">
         <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
     </footer>
 </body>

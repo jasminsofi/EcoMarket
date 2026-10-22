@@ -4,41 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoMarket - Sobre Nosotros</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
 </head>
 <body>
-    <header class="main-header">
+   <header class="header-sobre-nosotros">
+    <!-- Imagen de fondo del encabezado -->
+    <img src="../img/fondo4.jpg" alt="Fondo Sobre Nosotros" class="imagen-fondo-header">
+
+    <!-- Tu barra de navegación normal -->
+    <div class="main-header">
         <div class="logo">
             <a href="../index.html" class="logo-link">
-                <img src="../img/logo.svg" alt="EcoMarket Logo" style="height: 38px;">
+                <img src="../img/logo.jpg" alt="EcoMarket Logo" style="height: 38px;">
             </a>
         </div>
         <nav class="main-nav">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre-nosotros.html" class="active">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sobre-nosotros.html" class="activo">Nosotros</a></li>
             </ul>
         </nav>
-        <div class="header-actions">
-            <input type="text" placeholder="Buscar..." class="search-bar">
-            <a href="#" class="cart-icon">🛒 <span class="badge">3</span></a>
-        </div>
-    </header>
+    </div>
+
+    <!-- Título y texto encima de la imagen -->
+    <div class="contenido-header">
+        <h1>SOBRE NOSOTROS</h1>
+        <p>Conoce más acerca de nuestra tienda ecológica...</p>
+    </div>
+</header>
+</div>
 
     <main class="about-container" style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
         <!-- Historia Layout Flexbox -->
-        <section class="about-history" style="display: flex; gap: 2rem; align-items: center; margin-bottom: 3rem;">
-            <div class="history-text" style="flex: 1;">
+        <section class="about-history">
+            <div class="history-text">
                 <h2>Nuestra Historia</h2>
                 <p>EcoMarket nació con la visión de transformar el consumo masivo en decisiones conscientes. Nos dedicamos a conectar marcas éticas con consumidores que buscan proteger el medio ambiente.</p>
             </div>
-            <div class="history-image" style="flex: 1;">
-                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Naturaleza y Sostenibilidad" style="width: 100%; border-radius: 8px;">
+            <div class="history-image">
+                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Naturaleza y Sostenibilidad">
             </div>
         </section>
-
         <!-- Principios Ecológicos -->
         <section class="principles-section" style="margin-bottom: 3rem;">
             <h2>Nuestros Principios Ecológicos</h2>
@@ -60,25 +67,24 @@
                 </div>
             </div>
         </section>
-
         <!-- Testimonios -->
-        <section class="testimonials-section">
-            <h2>Testimonios de Clientes</h2>
-            <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-                <div class="testimonial-card" style="background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #ecf0f1; text-align: center;">
-                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Cliente" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
-                    <p>"EcoMarket cambió por completo mis hábitos. Productos de excelente calidad."</p>
-                    <div class="stars" style="color: #f1c40f; margin: 0.5rem 0;">★★★★★</div>
-                    <h4>María Fernanda</h4>
-                </div>
-                <div class="testimonial-card" style="background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #ecf0f1; text-align: center;">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Cliente" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
-                    <p>"El envío fue rapidísimo y sin un solo pedazo de plástico en el empaque."</p>
-                    <div class="stars" style="color: #f1c40f; margin: 0.5rem 0;">★★★★★</div>
-                    <h4>Carlos Gómez</h4>
-                </div>
-            </div>
-        </section>
+<section class="testimonials-section">
+    <h2>Testimonios de Clientes</h2>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Cliente">
+            <p>"EcoMarket cambió por completo mis hábitos. Productos de excelente calidad."</p>
+            <div class="stars">★★★★★</div>
+            <h4>María Fernanda</h4>
+        </div>
+        <div class="testimonial-card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Cliente">
+            <p>"El envío fue rapidísimo y sin un solo pedazo de plástico en el empaque."</p>
+            <div class="stars">★★★★★</div>
+            <h4>Carlos Gómez</h4>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="main-footer">
