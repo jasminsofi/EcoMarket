@@ -1,0 +1,61 @@
+
+.hero-banner {
+  background: linear-gradient(rgba(30, 57, 42, 0.75), rgba(30, 57, 42, 0.75)),
+              url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  color: var(--bg-white);
+  text-align: center;
+  padding: 4rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem auto;
+  max-width: 1200px;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: var(--primary-hover);
+}
+
+.product-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.badge-stock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge-stock.in-stock { background-color: var(--primary-color); }
+.badge-stock.out-stock { background-color: var(--accent-color); }
+
+/* Validaciones CSS de Formulario */
+.contact-form input:valid,
+.contact-form textarea:valid {
+  border-color: var(--primary-color);
+}
+
+.contact-form input:focus:invalid,
+.contact-form textarea:focus:invalid {
+  border-color: var(--accent-color);
+}

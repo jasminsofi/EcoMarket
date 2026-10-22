@@ -1,15 +1,50 @@
-/* Reset y estilos generales */
+/* Importación de módulos */
 @import url('layout.css');
 @import url('components.css');
 @import url('animations.css');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+:root {
+  --primary-color: #27ae60;
+  --primary-hover: #219150;
+  --secondary-color: #2ecc71;
+  --dark-color: #1e392a;
+  --text-color: #2c3e50;
+  --bg-light: #f8f9fa;
+  --bg-white: #ffffff;
+  --border-color: #ecf0f1;
+  --accent-color: #e74c3c;
+  --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
