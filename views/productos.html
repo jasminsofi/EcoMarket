@@ -1,15 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoMarket - Catálogo de Productos</title>
+    <title>Sobre Nosotros - EcoMarket</title>
+
+    <!-- Hojas de estilo CSS vinculadas correctamente desde la carpeta views/ -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
 
-    <!-- ENCABEZADO -->
+    <!-- ENCABEZADO PRINCIPAL UNIFICADO -->
     <header class="site-header">
         <div class="container header-container">
 
@@ -21,14 +24,24 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html" class="active">Productos</a></li>
-                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
 
         </div>
     </header>
+
+    <!-- SUBCABEZADO / BANNER CON IMAGEN Y TEXTO -->
+    <section class="banner-sobre-nosotros">
+        <img src="../img/fondo4.jpg" alt="Fondo Sobre Nosotros" class="imagen-fondo">
+        <div class="texto-sobre-imagen">
+            <h1>CATALOGO DE PRODUCTOS</h1>
+            <p>Conoce más acerca de nuestra tienda ecológica...</p>
+        </div>
+    </section>
+
 
     <!-- CONTENEDOR PRINCIPAL -->
     <main class="products-layout">
