@@ -123,7 +123,7 @@ body {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
+
 /* Estilos generales de la página de inicio */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -327,10 +327,7 @@ body {
 }
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> feature/catalogo
 .products-layout {
     display: grid;
     grid-template-columns: 290px minmax(0, 1fr);
@@ -470,8 +467,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.5px;
 }
-<<<<<<< HEAD
-=======
+
 
 /* --- Estilos del Subcabecera / Banner Sobre Nosotros --- */
 .banner-sobre-nosotros {
@@ -517,4 +513,3 @@ body {
     color: #ffffff;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
->>>>>>> feature/catalogo
