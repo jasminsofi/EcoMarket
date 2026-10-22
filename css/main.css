@@ -122,3 +122,232 @@ body {
     text-transform: uppercase;
     font-weight: bold;
 }
+
+/* Estilos generales de la página de inicio */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbf9;
+    color: #2d6a4f;
+}
+
+/* Barra de navegación */
+.site-header {
+    background-color: #1b4332;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #80ed99;
+    border-bottom: 2px solid #80ed99;
+    padding-bottom: 3px;
+}
+
+/* Sección Hero (Bienvenida) */
+.hero-section {
+    background: linear-gradient(rgba(27, 67, 50, 0.8), rgba(45, 106, 79, 0.8)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Botón principal */
+.btn-principal {
+    display: inline-block;
+    background-color: #52b788;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-principal:hover {
+    background-color: #40916c;
+    transform: translateY(-2px);
+}
+
+/* Sección de Características */
+.features-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features-section h2 {
+    color: #1b4332;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.feature-card h3 {
+    color: #1b4332;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #2d6a4f;
+    line-height: 1.5;
+}
+
+/* Pie de página */
+.site-footer {
+    background-color: #1b4332;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Contenedor del logo y el texto juntos */
+.logo-container {
+    display: flex;
+    align-items: center; /* Centra la imagen y el texto verticalmente */
+    gap: 12px;           /* Espacio de separación entre el logo y la palabra */
+    text-decoration: none;
+}
+
+/* Tamaño de la imagen del logo */
+.logo-container img {
+    height: 40px;
+    width: auto;
+    border-radius: 4px; /* Opcional: bordes ligeramente redondeados */
+}
+
+/* Estilo del texto EcoMarket al lado del logo */
+.logo-text {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+/* Encabezado y barra verde */
+.site-header {
+    background-color: #1b4332;
+    padding: 12px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Contenedor del logo y el texto alineados horizontalmente */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-container img {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Menú de navegación */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #80ed99;
+    border-bottom: 2px solid #80ed99;
+    padding-bottom: 3px;
+}
