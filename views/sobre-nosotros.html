@@ -3,53 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoMarket - Sobre Nosotros</title>
+    <title>Sobre Nosotros - EcoMarket</title>
+
+    <!-- Hojas de estilo CSS vinculadas correctamente desde la carpeta views/ -->
+    <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header class="main-header">
-        <div class="logo">
-            <a href="../index.html" class="logo-link">
-                <img src="../img/logo.jpg" alt="EcoMarket Logo" style="height: 38px;">
+
+    <!-- AQUÍ EMPIEZA TU ENCABEZADO Y EL BANNER -->
+    <!-- ENCABEZADO PRINCIPAL UNIFICADO -->
+    <header class="site-header">
+        <div class="container header-container">
+
+            <a href="../index.html" class="logo-container">
+                <img src="../img/logo.jpg" alt="EcoMarket Logo">
+                <span class="logo-text">EcoMarket</span>
             </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
         </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html" class="active">Productos</a></li>
-                <li><a href="sobre-nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    </header>
 
-   <header class="header-sobre-nosotros">
-    <!-- Imagen de fondo del encabezado -->
-    <img src="../img/fondo4.jpg" alt="Fondo Sobre Nosotros" class="imagen-fondo-header">
-
-    <!-- Tu barra de navegación normal -->
-    <div class="main-header">
-        <div class="logo">
-            <a href="../index.html" class="logo-link">
-                <img src="../img/logo.jpg" alt="EcoMarket Logo" style="height: 38px;">
-            </a>
+    <!-- SUBCABEZADO / BANNER CON IMAGEN Y TEXTO -->
+    <section class="banner-sobre-nosotros">
+        <img src="../img/fondo4.jpg" alt="Fondo Sobre Nosotros" class="imagen-fondo">
+        <div class="texto-sobre-imagen">
+            <h1>SOBRE NOSOTROS</h1>
+            <p>Conoce más acerca de nuestra tienda ecológica...</p>
         </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="sobre-nosotros.html" class="activo">Nosotros</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <!-- Título y texto encima de la imagen -->
-    <div class="contenido-header">
-        <h1>SOBRE NOSOTROS</h1>
-        <p>Conoce más acerca de nuestra tienda ecológica...</p>
-    </div>
-</header>
-</div>
-
+    </section>
     <main class="about-container" style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
         <!-- Historia Layout Flexbox -->
         <section class="about-history">

@@ -205,3 +205,47 @@
     margin-top: 0.5rem;
 }
 
+/* --- Estilos del Subcabecera / Banner Sobre Nosotros --- */
+.banner-sobre-nosotros {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-sobre-nosotros .imagen-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.65); /* Oscurece la imagen para que el texto resalte correctamente */
+}
+
+.texto-sobre-imagen {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.texto-sobre-imagen h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #4ade80; /* Tono verde brillante acorde a tu diseño */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Sombra para legibilidad */
+}
+
+.texto-sobre-imagen p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
