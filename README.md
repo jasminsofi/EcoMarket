@@ -109,7 +109,7 @@ EcoMarket/
 ## 🚀 Instrucciones de Visualización
 * Ejecución Local
 Clona el repositorio desde GitHub: Bash
-git clone [https://github.com/jasminsofi/EcoMarket.git](https://github.com/jasminsofi/EcoMarket.git)
+git clone [https://github.com/jasminsofi/EcoMarket](https://github.com/jasminsofi/EcoMarket)
 * Entra a la carpeta del proyecto: Bash
 cd EcoMarket
 Abre el archivo index.html directamente en tu navegador o utiliza la extensión Live Server en Visual Studio Code.
@@ -121,4 +121,5 @@ El desarrollo del proyecto se realizó implementando GitFlow, trabajando en rama
 La plataforma se encuentra desplegada y disponible para su consulta en el siguiente enlace:
 
 🔗 Ver Sitio Web de EcoMarket
+https://jasminsofi.github.io/EcoMarket/index.html
 
