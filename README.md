@@ -64,25 +64,46 @@ EcoMarket/
 
 **Portada Principal**
 <p align="center">
-  <img src="./capturas/portada.png" alt="Vista Móvil" width="280">
+  <img src="./capturas/portada.png" alt="Vista Móvil" width="360">
 </p>
 
 **Pagina Catalogo** 
 <p align="center">
-  <img src="./capturas/catalogo.png" alt="Vista Móvil" width="280">
+  <img src="./capturas/catalogo.png" alt="Vista Móvil" width="360">
 </p> 
 
 **Pagina Sobre Nosotros**
 <p align="center">
-  <img src="./capturas/sobre nosotros.png" alt="Vista Móvil" width="280">
+  <img src="./capturas/sobre nosotros.png" alt="Vista Móvil" width="360">
 </p>
 
 **Pagina Contacto**
 <p align="center">
-  <img src="./capturas/nuestro contacto.png" alt="Vista Móvil" width="280">
+  <img src="./capturas/nuestro contacto.png" alt="Vista Móvil" width="360">
 </p>
 
 ## Vista Móvil (Mobile-First)
+
+**Portada Principal**
+<p align="center">
+  <img src="./capturas/portada2.png" alt="Vista Móvil" width="300">
+</p> 
+
+
+**Pagina Catalogo** 
+<p align="center">
+  <img src="./capturas/image-1.png" alt="Vista Móvil" width="360">
+</p> 
+
+**Pagina Sobre Nosotros**
+<p align="center">
+  <img src="./capturas/image-2.png" alt="Vista Móvil" width="360">
+</p>
+
+**Pagina Contacto**
+<p align="center">
+  <img src="./capturas/image-3.png" alt="Vista Móvil" width="360">
+</p>
 
 
 ## 🚀 Instrucciones de Visualización

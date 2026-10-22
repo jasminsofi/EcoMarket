@@ -513,3 +513,31 @@ body {
     color: #ffffff;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
+
+header nav, header ul, .menu, .nav-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los enlaces bajen si no caben en una sola línea */
+    justify-content: center; /* Los centra dentro del cuadro verde */
+    align-items: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; /* Pone el logo arriba y el menú abajo ordenados */
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden; /* Esto oculta cualquier elemento que intente salirse */
+}
+
+header nav a, header ul li a {
+    font-size: 12px; /* Reduce ligeramente el tamaño para que queden cómodos */
+    padding: 4px 6px; /* Reduce el relleno interno */
+    margin: 2px; /* Espacio pequeño entre ellos */
+}

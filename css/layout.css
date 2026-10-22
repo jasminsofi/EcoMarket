@@ -29,3 +29,26 @@ nav a:hover {
 
 }
 
+/* Forzamos al header y al menú a comportarse bien en móviles */
+header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    height: auto !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+}
+
+header nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    margin-top: 8px !important;
+}
+
+header nav a {
+    font-size: 13px !important;
+    padding: 4px 8px !important;
+}
