@@ -123,6 +123,7 @@ body {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* Estilos generales de la página de inicio */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -353,11 +354,6 @@ body {
 }
 
 
-
-/* ==========================================
-   CORRECCIÓN DEL CATÁLOGO EC0MARKET
-   Se agrega sin borrar estilos de otras páginas
-========================================== */
 
 .products-layout {
     display: grid;
